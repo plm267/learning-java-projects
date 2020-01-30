@@ -1,0 +1,11 @@
+import java.util.Scanner; 
+public class CR01Q01 {
+   public static void main(String[] args) {
+Scanner console = new Scanner(System.in);
+System.out.print("Input the cents: ");
+int money = console.nextInt();
+int dollars = money/100;
+int cents = money%100;
+System.out.print("That is "+dollars+ " dollars and "+cents+" cents.");
+   } 
+}
