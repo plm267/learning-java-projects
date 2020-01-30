@@ -1,0 +1,22 @@
+import java.util.Scanner; 
+public class CR01Q01 {
+   public static void main(String[] args) {
+Scanner console = new Scanner(System.in);
+System.out.print("Enter first integer: ");
+int money = console.nextInt();
+int box = money*money;
+int cube = box*money;
+System.out.print("Enter second integer: ");
+int two = console.nextInt();
+int twos = two*two;
+int two3 = twos*two;
+System.out.print("Enter third integer: ");
+int thr = console.nextInt();
+int thrs = thr*thr;
+int thr3 = thrs*thr;
+System.out.println("number\tsquare\tcube");
+System.out.println(money+"\t"+box+"\t"+cube);
+System.out.println(two+"\t"+twos+"\t"+two3);
+System.out.println(thr+"\t"+thrs+"\t"+thr3);
+   } 
+}
