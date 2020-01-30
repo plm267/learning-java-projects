@@ -1,0 +1,12 @@
+import java.util.Scanner; 
+public class hun_ten_one {
+   public static void main(String[] args) {
+Scanner console = new Scanner(System.in);
+System.out.print("Enter three-digit integer: ");
+int money = console.nextInt();
+int hun = money/100;
+int one = money%10;
+int ten = (money%100-one)/10;
+System.out.print("Digits in "+money+ " are "+hun+"  "+ten+"  "+one);
+   } 
+}
