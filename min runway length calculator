@@ -1,0 +1,15 @@
+public static void calculateRunwayLength(double x, double y) {
+   double t = x*2;
+   double f= y*y;
+   double d= f/t;
+   double m=Math.ceil(d);
+
+   System.out.print("A ");
+   System.out.printf("%.0f",m);
+   System.out.print(" metre runway is needed for an acceleration of ");
+   System.out.printf("%.2f",x);
+System.out.print(" and speed of ");
+System.out.printf("%.2f",y);
+System.out.print(".");
+    
+}
