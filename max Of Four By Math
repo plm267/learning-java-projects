@@ -1,0 +1,7 @@
+public static int maxOfFourByMath(int a, int b, int c, int d) {
+int e = Math.max(a,b);
+int f = Math.max(c,d);
+int g = Math.max(e,f);
+return g;
+
+}
