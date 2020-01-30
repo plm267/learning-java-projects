@@ -1,0 +1,14 @@
+import java.util.Scanner; 
+public class box_checker {
+   public static void main(String[] args) {
+Scanner console = new Scanner(System.in);
+System.out.print("Enter the number of items: ");
+int money = console.nextInt();
+int box = money/10;
+int mod = money%10;
+if (mod > 0) {
+ box++;   
+}
+System.out.print("Number of boxes required is "+box+ ".");
+   } 
+}
