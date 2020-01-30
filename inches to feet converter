@@ -1,0 +1,11 @@
+import java.util.Scanner; 
+public class inches_to_feet {
+   public static void main(String[] args) {
+Scanner console = new Scanner(System.in);
+System.out.print("Enter your height in inches: ");
+int money = console.nextInt();
+int dollars = money/12;
+int cents = money%12;
+System.out.print("Your height is "+dollars+ " foot, "+cents+" inches.");
+   } 
+}
