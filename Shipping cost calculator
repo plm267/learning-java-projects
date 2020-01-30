@@ -1,0 +1,15 @@
+public static void getShippingCost(int x) {
+ if( x<0){
+               System.out.print("The shipping cost for my purchase is 0.00.");
+}
+
+            else if( x<=20){
+               System.out.print("The shipping cost for my purchase is 5.99.");
+}
+            else if( x<=65){
+               System.out.print("The shipping cost for my purchase is 10.99.");
+}
+            else{
+               System.out.print("The shipping cost for my purchase is 15.99.");}
+
+}
