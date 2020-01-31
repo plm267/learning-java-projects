@@ -1,0 +1,73 @@
+class Book {
+	String name;
+	private Author[] authors = new Author[5];
+	double price;
+	int qtyInStock;
+	
+	public Book (String name, Author[] authors, double price) {
+		this.name = name;
+		this.authors = authors;
+		this.price = price;
+	}
+	public Book (String name, Author[] authors, double price, int qtyInStock) {
+		this.name = name;
+		this.authors = authors;
+		this.price = price;
+		this.qtyInStock = qtyInStock;
+	}
+	
+
+	
+	public String getName(){
+		return this.name;
+	}
+	
+	public Author[] getAuthors() {
+		return this.authors;
+	}
+	
+	public double getPrice() {
+		return this.price;
+	}
+	
+	public void setPrice(double newPrice) {
+		this.price = newPrice;
+		return;
+	}
+	
+	public int getQtyInStock() {
+		return this.qtyInStock;
+	}
+	
+	public void setQtyInStock(int qty) {
+		this.qtyInStock = qty;
+	}
+	
+	public String toString() {
+		String ret = this.name + " by " + authors.length + " authors";
+		return ret;
+	}
+	
+	public void comma() {
+		System.out.print(", ");
+	}
+	
+	public void printAuthors() {
+		for(int i = 0;i<this.getAuthors().length - 1;++i) {
+			if(this.getAuthors()[i] != null) {
+				System.out.println(this.getAuthors()[i]);
+				if(this.getAuthors()[i + 1] != null) {
+				
+				}
+			} else {
+				System.out.print("");
+			}
+		}
+		if(this.getAuthors()[this.getAuthors().length -1] != null) {
+			System.out.print(this.getAuthors()[this.getAuthors().length -1]);
+		} else {
+			System.out.print("");
+		}
+	}
+	
+}
