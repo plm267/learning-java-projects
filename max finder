@@ -1,0 +1,9 @@
+  public static int maxOfArray(int[] arr) {
+    int max = Integer.MIN_VALUE; //initilize max to the smallest integer possible
+    for(int element: arr)
+        max = Math.max(max, element);
+    return max;
+  }
+  
+  int[] myArray = new int[]{0, 3, -3, 10, 2};
+System.out.printf("The largest element is: %d%n", maxOfArray(myArray));
