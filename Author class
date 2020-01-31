@@ -1,0 +1,23 @@
+class Author{
+    String name;
+    String email;
+    char gender;
+
+    Author( String name,String email, char gender){ 
+        this.name= name;
+        this.email = email;
+        this.gender = gender;
+    }
+
+     //You must add  to get bb.book or other data you need it
+     public String getName(){ return name;}
+
+     public void setEmail(String email){ this.email= email;   }
+     public String getEmail(){ return email;}
+
+     public char getGender(){ return gender;}
+     public String toString(){return name +" ("+gender+") at "+email;}
+}
+
+Author anAuthor4 = new Author("Tan Ah Teck", "ahteck@somewhere.com", 'm');
+System.out.println(anAuthor4.getGender());
