@@ -1,0 +1,8 @@
+public static double average(int... numbers) {
+double total = 0;
+for (double d: numbers)
+total += d;
+return total/numbers.length;
+}
+
+System.out.printf("The average is: %.2f%n", average(15, -4, 23, 45));
