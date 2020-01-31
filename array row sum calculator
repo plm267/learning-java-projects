@@ -1,0 +1,20 @@
+public static int[] sumPerRow(int[][] table)
+{
+    int rows = table.length;
+
+
+    int[] sum = new int[rows];//make an array for sums
+
+    for(int i=0; i<rows; i++) {
+    int cols = table[i].length;
+        for(int j=0; j<cols; j++){//iterate over all vars in the table array
+            int temp  = table[i][j];//take value in point (i,j)
+            sum[i] += temp;//sum it in sum[i].
+        }
+    }
+    return sum;   //return the 1D array  
+}
+
+int[][] data = { {3, 2, 5},{1, 4, 4, 8, 13},{9, 1, 0, 2},{0, 2, 6, 3, -1, -8} };
+int[] total = sumPerRow(data);
+System.out.println(Arrays.toString(total));
