@@ -1,0 +1,14 @@
+public static void calculateSumOfSeries (int x) {
+        int n = x;
+        double sum = 0;
+ 
+       while (n > 0) {
+              sum = sum + 1.0/n;
+              n--;
+        }
+        System.out.print("The sum OF this series is ");
+        System.out.printf("%.2f",sum);
+System.out.println(".");
+    
+}
+calculateSumOfSeries(5);
