@@ -1,0 +1,22 @@
+public static int[] averageSignal(int[] table)
+{
+int j = 0;
+int s =0;
+
+int rows = table.length;
+int[] copy = table.clone();
+
+copy[0] = (table[0]+table[1])/2;
+
+copy[table.length-1] = (table[table.length-2]+table[table.length-1])/2;
+s++;
+for(int i = 1;  i < rows-1; i++){
+j= (table[i-1]+table[i]+table[i+1])/3;
+
+copy[i]=j;}
+
+    return copy; 
+}
+int[] signal  = {1, 5, 4, 5, 7, 6, 8, 6, 5, 4, 5, 4};
+int[] result = averageSignal(signal);
+System.out.println(Arrays.toString(result));
