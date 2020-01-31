@@ -1,0 +1,14 @@
+public static ArrayList<String> createLongWordsArrayList(String[] word, int g){
+ArrayList<String> words = new ArrayList<String>();
+
+for (int i =0; i < word.length; i++ ){
+if(g <word[i].length()){
+    words.add(word[i]);
+}    
+}
+
+return words;
+}
+String[] words = {"hello", "elephant", "goodbye", "joker", "therefore"};
+ArrayList<String> x = createLongWordsArrayList(words, 4);
+System.out.println(x);
