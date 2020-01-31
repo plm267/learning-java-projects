@@ -1,0 +1,25 @@
+public static int getChannel(int a) { 
+String channelstring;
+        switch (a) {
+            case 1:  channelstring = "TV ONE";
+                  System.out.println(channelstring);   
+                     break;
+            case 2:  channelstring = "TV2";
+            System.out.println(channelstring);
+                     break;
+            case 3:  channelstring = "TV3";
+            System.out.println(channelstring);
+                     break;
+            case 4:  channelstring = "TV 4";
+            System.out.println(channelstring);
+                     break;
+            case 5:  channelstring = "Tv 5";
+                     System.out.println(channelstring);
+                     break;
+            default:  channelstring = "Unknown";
+                     System.out.println(channelstring);
+                     break;    
+}
+
+return 0;
+}
