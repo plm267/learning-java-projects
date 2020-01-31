@@ -1,0 +1,14 @@
+public static void doWhileEx(int x, int y) {
+    do {
+        x += 5;
+        y = x*3;
+        System.out.println(x+","+y);
+        
+    }
+    while(x<100);{
+        
+    }
+    
+    
+}
+doWhileEx(55, 15);
