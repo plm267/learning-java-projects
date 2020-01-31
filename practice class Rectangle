@@ -1,0 +1,33 @@
+class Rectangle extends Shape {
+   // Private member variables
+   protected double width;
+   protected double length;
+   public Rectangle(double length, double width){
+      this.length = length;
+      this.width = width;
+   }   
+   public Rectangle(){
+            this.width = 1.0;
+        this.length = 1.0;   
+   }
+   // Constructor
+   public Rectangle(double length, double width, String color, boolean filled) {
+      super(color, filled);
+      this.length = length;
+      this.width = width;
+   }
+   
+   @Override
+   public String toString() {
+      return "[" + length + "0 x " + width + "0, " + super.toString() + "]";
+   }
+   
+   // Override the inherited getArea() to provide the proper implementation
+   @Override
+   public double getArea() {
+      return length*width;
+   }
+   public double getPerimeter(){
+       return 2*(length+width);
+   }
+}
