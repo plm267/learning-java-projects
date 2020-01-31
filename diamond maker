@@ -1,0 +1,40 @@
+public static void drawDiamond(int height)
+{
+    DiamondTop(height);
+    DiamondBottom(height);
+}
+
+public static void DiamondTop(int height)
+{
+    for (int row = 1; row <= height; row++)
+    {
+        for (int padding = height - row; padding > 0; padding--)
+        {
+            System.out.print(" ");
+        }
+
+        for (int numberOfAsterisks = (row * 2) - 1; numberOfAsterisks > 0; numberOfAsterisks--)
+        {
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}
+
+public static void DiamondBottom(int height)
+{
+    for (int row = height - 1; row > 0; row--)
+    {
+        for (int padding = row; padding < height; padding++)
+        {
+            System.out.print(" ");
+        }
+
+        for (int numberOfAsterisks = (row * 2) - 1; numberOfAsterisks > 0; numberOfAsterisks--)
+        {
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}
+drawDiamond(8);
