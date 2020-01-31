@@ -1,0 +1,29 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+// BMI Calculator in Java
+// Uses metric units
+public class BMI{
+
+    public static void main(String[] args) throws Exception {
+        calculateBMI();
+    }
+
+    private static void calculateBMI() throws Exception {
+        try{
+        System.out.print("Enter your weight in kgs: ");
+        Scanner s = new Scanner(System.in);
+        double weight = s.nextDouble();
+        System.out.print("Enter your height in metres: ");
+        double height = s.nextDouble();
+
+        // multiplication by 100*100 for cm to m conversion
+        double bmi = (weight)/(height*height);
+
+        double roundOff = (double) Math.round(bmi * 100) / 100;
+        System.out.print ("Your BMI is: "+ roundOff);}
+        catch(Exception e){
+            System.out.print("Invalid input");
+        }
+
+    }}
